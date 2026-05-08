@@ -1,0 +1,33 @@
+class Mahasiswa:
+    def __init__(self, nama, nim):
+        self.__nama = nama
+        self.__nim = nim
+
+    def getNama(self):
+        return self.__nama
+    
+    def getNim(self):
+        return self.__nim
+    
+    def setNama(self, nama):
+        self.__nama = nama
+
+    def setNim(self, nim):
+        self.__nim = nim
+
+daftar_mahasiswa = []
+
+jumlah = int(input("Masukkan Jumlah Mahasiswa: "))
+
+for i in range(jumlah):
+    print(f"Data ke-{i+1}")
+    nama = input("Masukkan Nama: ")
+    nim = input("Masukkan NIM: ")
+    
+    mhs_baru = Mahasiswa(nama, nim)
+    daftar_mahasiswa.append(mhs_baru)
+
+print("HASIL DATA MAHASISWA")
+for mhs in daftar_mahasiswa:
+    print(f"Nama: {mhs.getNama()} | NIM: {mhs.getNim()}")
+
