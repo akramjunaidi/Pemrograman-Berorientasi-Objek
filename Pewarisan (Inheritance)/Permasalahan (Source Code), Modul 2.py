@@ -91,5 +91,5 @@ while True:
                 jdl.tampilkanInformasi()
 
     elif pilihan_menu == "7":
-        print("Keluar program...")
+        print("Terima kasih telah menggunakan sistem ini. Sampai jumpa!")
         break
