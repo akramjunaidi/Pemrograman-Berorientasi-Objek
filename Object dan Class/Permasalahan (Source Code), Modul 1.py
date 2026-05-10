@@ -34,13 +34,13 @@ while True:
         sks_mk = input("b. Masukkan Jumlah SKS       : ")
         daftar_nama_mk.append(nama_mk)
         daftar_sks_mk.append(sks_mk)
-        print(f"BERHASIL: Mata Kuliah '{nama_mk}' ({sks_mk} SKS) disimpan ke sistem!")
+        print(f"BERHASIL: Data Mata Kuliah disimpan ke sistem!")
 
     elif pilihan_menu == "2":
         print("Tambah Data Kelas")
         kelas = input("a. Masukkan Nama Kelas (A/B) : ")
         daftar_kelas.append(kelas)
-        print(f"BERHASIL: Kelas '{kelas}' disimpan ke sistem!")
+        print(f"BERHASIL: Data Kelas disimpan ke sistem!")
 
     elif pilihan_menu == "3":
         print("Tambah Data Dosen")
@@ -48,7 +48,7 @@ while True:
         nip_dosen = input("b. Masukkan NIP Dosen  : ")
         daftar_nama_dosen.append(nama_dosen)
         daftar_nip_dosen.append(nip_dosen)
-        print(f"BERHASIL: Dosen '{nama_dosen}' disimpan ke sistem!")
+        print(f"BERHASIL: Data Dosen disimpan ke sistem!")
 
     elif pilihan_menu == "4":
         print("Pembuatan Jadwal Kuliah")
