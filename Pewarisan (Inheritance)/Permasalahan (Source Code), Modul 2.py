@@ -10,9 +10,9 @@ class MataKuliah:
 
 class Teori(MataKuliah):
     def tampilkanInformasi(self):
-        print("--- [ JENIS: KELAS TEORI ] ---")
+        print("[JENIS: KELAS TEORI]")
         print(f"Mata Kuliah  : {self.nama_mk} ({self.jumlah_sks} SKS)")
-        print(f"Jadwal       : {self.jam} | Ruang: {self.ruangan}")
+        print(f"Jam          : {self.jam} | Ruang: {self.ruangan}")
         print(f"Kelas        : {self.kelas_paralel}")
         print(f"Dosen        : {self.nama_dosen} (NIP: {self.nip_dosen})")
 
@@ -20,10 +20,10 @@ class Praktikum(MataKuliah):
     def tampilkanInformasi(self):
         print("--- [ JENIS: KELAS PRAKTIKUM (LAB) ] ---")
         print(f"Mata Kuliah  : {self.nama_mk} ({self.jumlah_sks} SKS)")
-        print(f"Jam       : {self.jam} | Ruang: {self.ruangan}")
+        print(f"Jam          : {self.jam} | Ruang: {self.ruangan}")
         print(f"Kelas        : {self.kelas_paralel}")
         print(f"Dosen        : {self.nama_dosen} (NIP: {self.nip_dosen})")
-        print("Keterangan   : Wajib memakai jas laboratorium")
+        print("Keterangan    : Wajib membawa modul praktikum")
 
 daftar_jadwal = [] 
 
@@ -63,7 +63,7 @@ while True:
         print("Status: Jenis tersimpan sementara.")
 
     elif pilihan_menu == "5":
-        print("[ Input Detail Jadwal & Simpan ]")
+        print("[Input Detail Jadwal & Simpan]")
         nama_mk_baru = input("- Masukkan Nama Mata Kuliah : ")
         jam_baru     = input("- Masukkan Jam (Contoh 08:00): ")
         ruang_baru   = input("- Masukkan Nama Ruangan      : ")
@@ -86,9 +86,8 @@ while True:
         if daftar_jadwal == []:
             print("Belum ada jadwal yang tersimpan.")
         else:
-            for jdl in daftar_jadwal:
-                print()
-                jdl.tampilkanInformasi()
+            for jadwal in daftar_jadwal:
+                jadwal.tampilkanInformasi()
 
     elif pilihan_menu == "7":
         print("Terima kasih telah menggunakan sistem ini. Sampai jumpa!")
