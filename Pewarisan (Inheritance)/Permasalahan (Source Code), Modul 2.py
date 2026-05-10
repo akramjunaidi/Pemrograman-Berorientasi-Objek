@@ -90,3 +90,6 @@ while True:
     elif pilihan_menu == "7":
         print("Terima kasih telah menggunakan sistem ini. Sampai jumpa!")
         break
+
+    else:
+        print("ERROR: Pilihan menu tidak valid. Silakan pilih angka 1 hingga 7.")
