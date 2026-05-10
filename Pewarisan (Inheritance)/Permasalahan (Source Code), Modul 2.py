@@ -18,7 +18,7 @@ class Teori(MataKuliah):
 
 class Praktikum(MataKuliah):
     def tampilkanInformasi(self):
-        print("--- [ JENIS: KELAS PRAKTIKUM (LAB) ] ---")
+        print("[JENIS: KELAS PRAKTIKUM (LAB)]")
         print(f"Mata Kuliah  : {self.nama_mk} ({self.jumlah_sks} SKS)")
         print(f"Jam          : {self.jam} | Ruang: {self.ruangan}")
         print(f"Kelas        : {self.kelas_paralel}")
@@ -75,7 +75,6 @@ while True:
                 objek_jadwal = Praktikum(nama_mk_baru, temp_sks, temp_kelas, temp_nama_dosen, temp_nip_dosen, jam_baru, ruang_baru)
             else:
                 objek_jadwal = Teori(nama_mk_baru, temp_sks, temp_kelas, temp_nama_dosen, temp_nip_dosen, jam_baru, ruang_baru)
-            
             daftar_jadwal.append(objek_jadwal)
             print("BERHASIL: Jadwal Baru telah dirakit dan disimpan!")
             
