@@ -70,7 +70,7 @@ while True:
         else:
             nomor_urut = 1
             for jadwal in daftar_jadwal:
-                print(f"[ Jadwal ke-{nomor_urut} ]")
+                print(f"[Jadwal ke-{nomor_urut}]")
                 jadwal.tampilkanInformasi()
                 nomor_urut = nomor_urut + 1
 
