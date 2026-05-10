@@ -67,7 +67,6 @@ while True:
         nama_mk_baru = input("- Masukkan Nama Mata Kuliah : ")
         jam_baru     = input("- Masukkan Jam (Contoh 08:00): ")
         ruang_baru   = input("- Masukkan Nama Ruangan      : ")
-        
         if temp_sks == "" or temp_kelas == "" or temp_nama_dosen == "" or temp_jenis == "":
             print("GAGAL: Mohon lengkapi Menu 1 sampai 4 terlebih dahulu!")
         else:
