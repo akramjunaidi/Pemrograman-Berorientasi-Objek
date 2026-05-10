@@ -1,5 +1,3 @@
-#Permasalahan Modul 1
-
 class JadwalKuliah:
     def __init__(self, nama_mk, kelas, dosen, hari):
         self.nama_mk = nama_mk
