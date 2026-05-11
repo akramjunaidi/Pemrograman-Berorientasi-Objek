@@ -10,8 +10,8 @@ class MataKuliah:
         self.__jam = jam
         self.__ruangan = ruangan
 
-    def getNamaMk(self): return self.__nama_mk
-    def setNamaMk(self, nama_mk): self.__nama_mk = nama_mk
+    def getNamaMK(self): return self.__nama_mk
+    def setNamaMK(self, nama_mk): self.__nama_mk = nama_mk
 
     def getJumlahSKS(self): return self.__jumlah_sks
     def setJumlahSKS(self, jumlah_sks): self.__jumlah_sks = jumlah_sks
